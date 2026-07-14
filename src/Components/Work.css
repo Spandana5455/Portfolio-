@@ -1,0 +1,285 @@
+/* ===================== */
+/* WORK */
+/* ===================== */
+.work {
+  padding: 110px 24px;
+
+  position: relative;
+  overflow: hidden;
+
+  /* PURPLE LIGHT THEME */
+  background: #f7f0ff;
+}
+
+/* DARK */
+[data-theme="dark"] .work {
+  background: #020617;
+}
+
+/* ===================== */
+/* CONTAINER */
+/* ===================== */
+.workContainer {
+  max-width: 1100px;
+  margin: auto;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================== */
+/* HEADING */
+/* ===================== */
+.workHeading {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+
+  font-weight: 800;
+
+  letter-spacing: -0.03em;
+
+  color: #2e1065;
+}
+
+/* DARK */
+[data-theme="dark"] .workHeading {
+  color: #f1f5f9;
+}
+
+/* ===================== */
+/* SUBTEXT */
+/* ===================== */
+.workSub {
+  margin-top: 16px;
+
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+/* DARK */
+[data-theme="dark"] .workSub {
+  color: #94a3b8;
+}
+
+/* ===================== */
+/* GRID */
+/* ===================== */
+.workGrid {
+  margin-top: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+/* ===================== */
+/* CARD */
+/* ===================== */
+.workCard {
+  background: rgba(223, 184, 224, 0.65);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  border-radius: 22px;
+
+  padding: 24px;
+
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.35s ease;
+
+  box-shadow:
+    0 12px 35px rgba(168,85,247,0.1);
+}
+
+/* HOVER */
+.workCard:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 55px rgba(168,85,247,0.18);
+
+  border-color: rgba(168,85,247,0.3);
+}
+
+/* ===================== */
+/* DARK */
+/* ===================== */
+[data-theme="dark"] .workCard {
+  background: linear-gradient(
+    145deg,
+    #020617,
+    #0f172a
+  );
+
+  border: 1px solid #1e293b;
+}
+
+[data-theme="dark"] .workCard:hover {
+  border-color: #7c3aed;
+
+  box-shadow:
+    0 25px 60px rgba(124,58,237,0.18);
+}
+
+/* ===================== */
+/* CONTENT */
+/* ===================== */
+.workContent h3 {
+  font-size: 1.15rem;
+
+  margin-bottom: 10px;
+
+  color: #581c87;
+}
+
+/* DARK */
+[data-theme="dark"] .workContent h3 {
+  color: #f1f5f9;
+}
+
+/* DESCRIPTION */
+.workContent p {
+  font-size: 0.95rem;
+
+  color: #6b7280;
+
+  margin-bottom: 18px;
+
+  line-height: 1.8;
+}
+
+/* DARK */
+[data-theme="dark"] .workContent p {
+  color: #94a3b8;
+}
+
+/* ===================== */
+/* TECH TAG */
+/* ===================== */
+.tech {
+  width: fit-content;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  background: rgba(255,255,255,0.55);
+
+  color: #7e22ce;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,0.45);
+}
+
+/* DARK */
+[data-theme="dark"] .tech {
+  background: #1e293b;
+
+  color: #c084fc;
+
+  border: 1px solid #334155;
+}
+
+/* ===================== */
+/* BUTTON */
+/* ===================== */
+.viewBtn {
+  margin-top: 22px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  color: #9333ea;
+
+  width: fit-content;
+
+  transition: 0.3s ease;
+}
+
+.viewBtn:hover {
+  transform: translateX(4px);
+
+  color: #7e22ce;
+}
+
+/* DARK */
+[data-theme="dark"] .viewBtn {
+  color: #a855f7;
+}
+
+/* ===================== */
+/* CURSOR GLOW */
+/* ===================== */
+.cursorGlow {
+  position: fixed;
+
+  width: 260px;
+  height: 260px;
+
+  background: radial-gradient(
+    circle,
+    rgba(168,85,247,0.45),
+    rgba(168,85,247,0.18) 40%,
+    transparent 75%
+  );
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+
+  filter: blur(70px);
+}
+
+/* DARK */
+[data-theme="dark"] .cursorGlow {
+  background: radial-gradient(
+    circle,
+    rgba(139,92,246,0.5),
+    rgba(139,92,246,0.22) 40%,
+    transparent 75%
+  );
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 900px) {
+
+  .workGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .work {
+    padding: 90px 20px;
+  }
+
+  .workGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .workCard {
+    padding: 22px;
+  }
+}
+
+

@@ -1,0 +1,266 @@
+/* ===================== */
+/* CONTACT */
+/* ===================== */
+.contact {
+  padding: 120px 24px;
+  position: relative;
+  overflow: hidden;
+
+  /* PURPLE LIGHT THEME */
+  background: #f7f0ff;
+}
+
+/* DARK */
+[data-theme="dark"] .contact {
+  background: #020617;
+}
+
+/* ===================== */
+/* CONTAINER */
+/* ===================== */
+.contactContainer {
+  max-width: 850px;
+  margin: auto;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================== */
+/* TAG */
+/* ===================== */
+.contactTag {
+  color: #9333ea;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  margin-bottom: 14px;
+
+  letter-spacing: 0.3px;
+}
+
+/* ===================== */
+/* HEADING */
+/* ===================== */
+.contactHeading {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.03em;
+
+  color: #2e1065;
+}
+
+/* DARK */
+[data-theme="dark"] .contactHeading {
+  color: #f1f5f9;
+}
+
+/* ===================== */
+/* SUBTEXT */
+/* ===================== */
+.contactSub {
+  margin-top: 20px;
+
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+/* DARK */
+[data-theme="dark"] .contactSub {
+  color: #94a3b8;
+}
+
+/* ===================== */
+/* ACTIONS */
+/* ===================== */
+.contactActions {
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* ===================== */
+/* BUTTON */
+/* ===================== */
+.contactBtn {
+  padding: 14px 26px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+
+  backdrop-filter: blur(14px);
+}
+
+/* ===================== */
+/* PRIMARY */
+/* ===================== */
+.contactBtn.primary {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #7e22ce
+  );
+
+  color: white;
+
+  box-shadow:
+    0 12px 35px rgba(147,51,234,0.35);
+}
+
+.contactBtn.primary:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 45px rgba(147,51,234,0.5),
+    0 0 25px rgba(147,51,234,0.35);
+}
+
+/* ===================== */
+/* SECONDARY */
+/* ===================== */
+.contactBtn.secondary {
+  background: rgba(223, 184, 224, 0.65);
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  color: #581c87;
+}
+
+.contactBtn.secondary:hover {
+  background: rgba(223, 184, 224, 0.9);
+
+  transform: translateY(-3px);
+}
+
+/* DARK */
+[data-theme="dark"] .contactBtn.secondary {
+  background: rgba(15,23,42,0.7);
+
+  border: 1px solid #334155;
+
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .contactBtn.secondary:hover {
+  background: #1e293b;
+}
+
+/* ===================== */
+/* SOCIALS */
+/* ===================== */
+.socials {
+  margin-top: 45px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+/* LINK */
+.socialLink {
+  color: #6b7280;
+
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #9333ea;
+
+  transform: translateY(-2px);
+}
+
+/* DARK */
+[data-theme="dark"] .socialLink {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .socialLink:hover {
+  color: #a855f7;
+}
+
+/* ===================== */
+/* CURSOR GLOW */
+/* ===================== */
+.cursorGlow {
+  position: fixed;
+
+  width: 260px;
+  height: 260px;
+
+  background: radial-gradient(
+    circle,
+    rgba(168,85,247,0.45),
+    rgba(168,85,247,0.18) 40%,
+    transparent 75%
+  );
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+
+  filter: blur(70px);
+
+  transition: 0.1s ease;
+}
+
+/* DARK */
+[data-theme="dark"] .cursorGlow {
+  background: radial-gradient(
+    circle,
+    rgba(139,92,246,0.5),
+    rgba(139,92,246,0.25) 40%,
+    transparent 75%
+  );
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 100px 20px;
+  }
+
+  .contactActions {
+    flex-direction: column;
+  }
+
+  .contactBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socials {
+    gap: 18px;
+  }
+}
+
+
+

@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+}
+
+/* ===================== */
+/* MAGNETIC EFFECT */
+/* ===================== */
+.magnetic {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+
+.magnetic:hover {
+  box-shadow: 0 10px 30px rgba(99,102,241,0.35);
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
